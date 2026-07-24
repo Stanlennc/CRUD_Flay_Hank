@@ -16,4 +16,7 @@ def find_all_tasks():
 def find_by_id(task_id: int) -> dict | None:
     task = next((t for t in tasks if t["id"] == task_id), None)
     return task.copy() if task else None
-    
+
+def add(new_task: dict) -> dict:
+    tasks.append(new_task)
+    return new_task
