@@ -39,7 +39,7 @@ http://localhost:8000/docs
 
 This is **Swagger UI** — an interactive page that lists every endpoint and lets you test them with a "Try it out" button, no `curl` needed.
 
-![Swagger UI - full list of endpoints](01-swagger-completo.png)
+![Swagger UI - full list of endpoints](01-swagger-completo_2.png)
 
 ---
 
