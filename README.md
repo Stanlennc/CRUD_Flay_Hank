@@ -223,3 +223,5 @@ curl -i -X DELETE http://localhost:8000/tasks/99
 | POST | `/tasks` | Create a task | 201 | 400 if title missing/empty |
 | PUT | `/tasks/{task_id}` | Update a task | 200 | 404 if not found |
 | DELETE | `/tasks/{task_id}` | Delete a task | 204 | 404 if not found |
+
+## Stage 6: publish and docs
