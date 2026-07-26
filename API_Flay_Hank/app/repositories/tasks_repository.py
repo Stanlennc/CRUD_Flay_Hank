@@ -20,3 +20,18 @@ def find_by_id(task_id: int) -> dict | None:
 def add(new_task: dict) -> dict:
     tasks.append(new_task)
     return new_task
+
+# repository.py
+def update_task(task_id: int, updated_fields: dict) -> dict | None:
+    for task in tasks:
+        if task["id"] == task_id:
+            task.update(updated_fields)
+            return task
+    return None
+
+def delete_task_repository(task_id: int) -> bool:
+    for i, task in enumerate(tasks):
+        if task["id"] == task_id:
+            del tasks[i]
+            return True
+    return False
