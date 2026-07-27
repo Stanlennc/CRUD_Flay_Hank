@@ -24,7 +24,8 @@ pip install -r requirements.txt
 ## 2. How to run it (one command)
 
 ```bash
-uvicorn main:app --reload
+cd API_Flay_Rank
+uvicorn app.main:app --reload
 ```
 
 This starts the server at `http://localhost:8000`.
